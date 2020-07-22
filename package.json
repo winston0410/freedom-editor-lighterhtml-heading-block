@@ -1,6 +1,6 @@
 {
   "name": "@freedom-editor/lighterhtml-heading-block",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Heading block built with Lighterhtml for Freedom Editor",
   "main": "./src/index.js",
   "scripts": {
