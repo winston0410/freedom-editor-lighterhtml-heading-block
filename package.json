@@ -2,9 +2,10 @@
   "name": "@freedom-editor/lighterhtml-heading-block",
   "version": "1.0.0",
   "description": "Heading block built with Lighterhtml for Freedom Editor",
-  "main": "index.js",
+  "main": "./src/index.js",
   "scripts": {
-    "build": "npx rollup -c;"
+    "build": "npx rollup -c;",
+    "release": "npx rollup -c; np"
   },
   "keywords": [
     "Heading",
@@ -28,6 +29,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
+    "husky": "^4.2.5",
     "rollup": "^2.21.0",
     "rollup-plugin-node-polyfills": "^0.2.1",
     "rollup-plugin-peer-deps-external": "^2.2.3",

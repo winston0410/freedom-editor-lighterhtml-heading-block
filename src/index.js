@@ -1,4 +1,8 @@
 import {
+  getSavedData
+} from './utilities/helper.js'
+
+import {
   asStatic,
   asParams,
   asTag
@@ -37,8 +41,8 @@ class Heading {
     const headingTag = (headingLevel) ? asStatic(headingLevel) : asStatic(this.options.defaultHeadingLevel)
     const textDirection = (i18n.rtl !== undefined) ? i18n.rtl : this.options.i18n.rtl
 
-    return shtml`<div class="blocks ${this.constructor.name}-block" data-block-type="${this.constructor.name}">
-    <${headingTag} class="heading-field" contenteditable dir="${textDirection}">${savedData}</${headingTag}>
+    return shtml`<div class="freedom-editor-blocks ${this.constructor.name}-block" data-block-type="${this.constructor.name}">
+    <${headingTag} class="heading-field" contenteditable dir="${textDirection}">${getSavedData(savedData)}</${headingTag}>
     </div>`
   }
 
@@ -48,9 +52,9 @@ class Heading {
       return
     }
     return {
-      type: 'heading',
+      type: this.constructor.name,
       data: {
-        text: editableField.textContent
+        heading: editableField.textContent
       }
     }
   }
