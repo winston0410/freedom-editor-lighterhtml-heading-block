@@ -4,6 +4,6 @@ const getSavedData = (savedData) => {
   }
 }
 
-export {
+module.exports = {
   getSavedData
 }

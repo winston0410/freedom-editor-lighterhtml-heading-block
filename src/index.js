@@ -1,18 +1,18 @@
-import {
+const {
   getSavedData
-} from './utilities/helper.js'
+} = require('./utilities/helper.js')
 
-import {
+const {
   asStatic,
   asParams,
   asTag
-} from 'static-params'
+} = require('static-params')
 
-import {
+const {
   render,
   html,
   svg
-} from 'lighterhtml'
+} = require('lighterhtml')
 
 class Heading {
   constructor (customOptions) {
@@ -60,6 +60,6 @@ class Heading {
   }
 }
 
-export {
+module.exports = {
   Heading
 }
