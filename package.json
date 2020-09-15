@@ -18,7 +18,7 @@
   "repository": "github:winston0410/freedom-editor-lighterhtml-heading-block",
   "license": "MIT",
   "dependencies": {
-    "lighterhtml": "^4.0.2",
+    "lighterhtml": "^4.1.0",
     "static-params": "^0.1.3"
   },
   "devDependencies": {
